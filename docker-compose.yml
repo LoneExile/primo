@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  primo:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: primo
+    ports:
+      - '4173:4173'
+    restart: always
